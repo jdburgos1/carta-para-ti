@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para ti ❤️</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="bg-text">XXXIII</div>
+    <h1>Feliz Mes, Amor de mi Vida 💌</h1>
+    <p>Desliza despacio… y disfruta este detallito</p>
+</header>
+
+<section class="letter reveal visible">
+    <p>
+        Dios sabe la alegria que haz traido a mi vida.
+        La emoción de cada día nuevo a tu lado
+        y pensar que ya no son solo meses sino años los que nos preceden.
+    </p>
+</section>
+
+<div class="side-note reveal left">
+    <i class="fa-solid fa-heart"></i>
+    <span>Siempre tú 🤍</span>
+</div>
+
+<section class="letter reveal">
+    <p>
+        Tienes magía en tu ser y cada parte de ti exhala Amor.
+        Tienes vida en tu vida y luz que alumbro mi corazón.
+    </p>
+</section>
+
+<div class="side-note reveal right">
+    <i class="fa-solid fa-star"></i>
+    <span>Eres mi lugar seguro</span>
+</div>
+
+<section class="letter reveal">
+    <p>
+        Este nuevo mes a tu lado me confirma
+        la fortuna que tengo de poder caminar a tu lado.
+        La alegría de ser tu novio y la emoción de ser tu felicidad.
+    </p>
+</section>
+
+<section class="photo-section reveal">
+    <img src="img/nosotros.jpg" alt="Nosotros">
+</section>
+
+<div class="side-note reveal left">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Te volvería a elegir</span>
+</div>
+
+<section class="letter reveal">
+    <p>
+        Sé que no he sido perfecto y, a veces, difícil de tratar,
+        pero sé que lo intentaría mil veces más y que buscaría ser siempre mejor
+        con tal de estar a tu lado, en tu corazón.
+    </p>
+</section>
+
+<section class="gallery reveal">
+    <img src="img/foto1.jpg">
+    <img src="img/foto2.jpg">
+    <img src="img/foto3.jpg">
+</section>
+
+<div class="side-note reveal right">
+    <i class="fa-solid fa-infinity"></i>
+    <span>Mi eterno y buen amor</span>
+</div>
+
+<section class="letter reveal">
+    <p>
+        En este nuevo mes, en esta navidad solo quiero llenar de alegría tu vida
+        ser ese brillo en tus noches oscuras, ser tu todo, tu compañía, tu felicidad, tu amor💕
+    </p>
+</section>
+
+<footer class="footer reveal">
+    <p>Puede haber mil universos y aun asi te elegiría siempre ❤️</p>
+</footer>
+
+<script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+        reveals.forEach(section => {
+            const windowHeight = window.innerHeight;
+            const elementTop = section.getBoundingClientRect().top;
+            const elementVisible = 100;
+
+            if (elementTop < windowHeight - elementVisible) {
+                section.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+</script>
+
+</body>
+</html>
